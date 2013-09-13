@@ -1,0 +1,78 @@
+{% autoescape true %}
+<html>
+<head>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery.expander.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <!-- <script src="/js/list.min.js"></script> -->
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="clearfix">
+	<div class="expandable">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+		</p>
+		<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<div id="container">
+	<div id="main">
+    <div class="c1">
+    <div id="lovely-things-list">
+		<!--
+		<input class="search" />
+		<span class="sort" data-sort="feature">Sort features</span>
+		-->
+		<ul class="list">
+		<li>
+			<img src="/img/coffee.jpg" class="thumb" />
+            <h4>
+				<span class="name">Good Coffee</span>
+				<span class="category">Beverage</span>
+			</h4>
+			<div class="expandable">
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+				</p>
+				<p class="description">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+			officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</li>
+		<li>
+			<img src="/img/coffee.jpg" class="thumb" />
+            <h4>
+				<span class="name">Good Coffee</span>
+				<span class="category">Beverage</span>
+			</h4>
+            <p class="description">Coffee is a brewed beverage with a dark, slightly acidic flavor prepared from the roasted seeds of the coffee plant, colloquially called coffee beans.</p>
+
+		</li>
+		<li>
+			<img src="/img/coffee.jpg" class="thumb" />
+			<h4>
+				<span class="name">Good Coffee</span>
+				<span class="category">Beverage</span>
+            </h4>
+			<p class="description">Coffee is a brewed beverage with a dark, slightly acidic flavor prepared from the roasted seeds of the coffee plant, colloquially called coffee beans.</p>
+		</li>
+		</ul>
+	</div>
+    </div>
+	</div>
+    {# 
+    {% for greeting in greetings %}
+        <p>{{ greeting }}</p>
+    {% endfor %}
+	#}
+	</div>
+  </body>
+</html>
+{% endautoescape %}
+
